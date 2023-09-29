@@ -1,12 +1,14 @@
+"use client"
 import { CallToAction } from '@/components/CallToAction'
-import { Faqs } from '@/components/Faqs'
+import Faqs from '@/components/Faqs'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
-import { Pricing } from '@/components/Pricing'
-import { PrimaryFeatures } from '@/components/PrimaryFeatures'
-import { SecondaryFeatures } from '@/components/SecondaryFeatures'
-import { Testimonials } from '@/components/Testimonials'
+import { Integrations } from '@/components/Integrations'
+import { Solution } from '@/components/Solution'
+import Testimonials from '@/components/Testimonials'
+import Features from '@/components/Features'
+import About from '@/components/About'
 
 export default function Home() {
   return (
@@ -14,11 +16,13 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <PrimaryFeatures />
-        <SecondaryFeatures />
+        <About />
+        <Solution />
+        <Features />
+        <Integrations />
         <CallToAction />
         <Testimonials />
-        <Pricing />
+        
         <Faqs />
       </main>
       <Footer />

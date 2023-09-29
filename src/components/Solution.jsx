@@ -4,7 +4,7 @@ import { useId } from 'react'
 import Image from 'next/image'
 import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
-
+import { BackgroundImage } from '@/components/BackgroundImage'
 import { Container } from '@/components/Container'
 import screenshotContacts from '@/images/screenshots/contacts.png'
 import screenshotInventory from '@/images/screenshots/inventory.png'
@@ -12,7 +12,7 @@ import screenshotProfitLoss from '@/images/screenshots/profit-loss.png'
 
 const features = [
   {
-    name: 'Reporting',
+    name: 'El Smart-Tag',
     summary: 'Stay on top of things with always up-to-date reporting features.',
     description:
       'We talked about reporting in the section above but we needed three items here, so mentioning it one more time for posterity.',
@@ -117,15 +117,13 @@ function Feature({ feature, isActive, className, ...props }) {
       <h3
         className={clsx(
           'mt-6 text-sm font-medium',
-          isActive ? 'text-blue-600' : 'text-slate-600',
+          isActive ? 'text-blue-600' : 'text-blue-900',
         )}
       >
         {feature.name}
       </h3>
-      <p className="mt-2 font-display text-xl text-slate-900">
-        {feature.summary}
-      </p>
-      <p className="mt-4 text-sm text-slate-600">{feature.description}</p>
+      <p className="mt-2 font-display text-xl text-blue-900">{feature.summary}</p>
+      <p className="mt-4 text-sm text-blue-900">{feature.description}</p>
     </div>
   )
 }
@@ -176,7 +174,7 @@ function FeaturesDesktop() {
               />
             ))}
           </Tab.List>
-          <Tab.Panels className="relative mt-20 overflow-hidden rounded-4xl bg-slate-200 px-14 py-16 xl:px-16">
+          <Tab.Panels className="relative mt-20 overflow-hidden rounded-4xl bg-gray-800 px-14 py-16 xl:px-16">
             <div className="-mx-5 flex">
               {features.map((feature, featureIndex) => (
                 <Tab.Panel
@@ -208,26 +206,31 @@ function FeaturesDesktop() {
   )
 }
 
-export function SecondaryFeatures() {
+export function Solution() {
   return (
     <section
       id="secondary-features"
       aria-label="Features for simplifying everyday business tasks"
-      className="pb-14 pt-20 sm:pb-20 sm:pt-32 lg:pb-32"
+      className="pb-14 pt-20 sm:pb-20 sm:pt-32 lg:pb-32 "
     >
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
-          <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Simplify everyday business tasks.
+          <h2 className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl">
+          Una Solution Completa
           </h2>
-          <p className="mt-4 text-lg tracking-tight text-slate-700">
+          {/* <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-blue-900">
             Because you’d probably be a little confused if we suggested you
             complicate your everyday business tasks instead.
-          </p>
+          </p> */}
         </div>
-        <FeaturesMobile />
-        <FeaturesDesktop />
       </Container>
+      <div className="relative mt-14 sm:mt-24">
+        <BackgroundImage position="right" className=" -z-10 -bottom-32 -top-40" />
+        <Container className="relative">
+          <FeaturesMobile />
+          <FeaturesDesktop />
+        </Container>
+      </div>
     </section>
   )
 }
