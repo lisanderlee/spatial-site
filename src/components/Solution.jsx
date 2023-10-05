@@ -1,4 +1,5 @@
 'use client'
+import Spline from '@splinetool/react-spline';
 
 import { useId } from 'react'
 import Image from 'next/image'
@@ -6,17 +7,18 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 import { BackgroundImage } from '@/components/BackgroundImage'
 import { Container } from '@/components/Container'
-import screenshotContacts from '@/images/screenshots/contacts.png'
-import screenshotInventory from '@/images/screenshots/inventory.png'
-import screenshotProfitLoss from '@/images/screenshots/profit-loss.png'
+import screenshotContacts from '@/images/screenshots/hand.png'
+import screenshotInventory from '@/images/screenshots/tunnel.png'
+import screenshotProfitLoss from '@/images/screenshots/tag.png'
+import Testimonials from './Testimonials'
 
 const features = [
   {
-    name: 'El Smart-Tag',
-    summary: 'Stay on top of things with always up-to-date reporting features.',
+    name: 'Smart-Tag',
+    summary: 'Desde producción hasta el consumidor, etiquetas que rastrean cada prenda.',
     description:
-      'We talked about reporting in the section above but we needed three items here, so mentioning it one more time for posterity.',
-    image: screenshotProfitLoss,
+      'Colocadas en cada prenda desde el inicio del proceso de producción, estas etiquetas diseñadas a medida.',
+    image: "https://prod.spline.design/0w2BcPBxkeKjEbEJ/scene.splinecode",
     icon: function ReportingIcon() {
       let id = useId()
       return (
@@ -46,12 +48,12 @@ const features = [
     },
   },
   {
-    name: 'Inventory',
+    name: 'Smart-Tunnel',
     summary:
-      'Never lose track of what’s in stock with accurate inventory tracking.',
+      'Captura instantánea de contenidos, eliminando conteos manuales.',
     description:
-      'We don’t offer this as part of our software but that statement is inarguably true. Accurate inventory tracking would help you for sure.',
-    image: screenshotInventory,
+      'We don’t offer this as part of our software but that statement is inarguably true. Accurate inventory tracking.',
+    image: "https://prod.spline.design/yJeHbqaQtGSGml0o/scene.splinecode",
     icon: function InventoryIcon() {
       return (
         <>
@@ -74,12 +76,12 @@ const features = [
     },
   },
   {
-    name: 'Contacts',
+    name: 'Smart-Reader',
     summary:
-      'Organize all of your contacts, service providers, and invoices in one place.',
+      'Rastreo completo desde almacén hasta punto de venta.',
     description:
-      'This also isn’t actually a feature, it’s just some friendly advice. We definitely recommend that you do this, you’ll feel really organized and professional.',
-    image: screenshotContacts,
+      'This also isn’t actually a feature, it’s just some friendly advice. We definitely recommend that you do this.',
+    image: "https://prod.spline.design/MQJh3m6JF9ceb9Iq/scene.splinecode",
     icon: function ContactsIcon() {
       return (
         <>
@@ -96,12 +98,13 @@ const features = [
       )
     },
   },
+  
 ]
 
 function Feature({ feature, isActive, className, ...props }) {
   return (
     <div
-      className={clsx(className, !isActive && 'opacity-75 hover:opacity-100')}
+      className={clsx(className, !isActive && 'opacity-50 hover:opacity-100')}
       {...props}
     >
       <div
@@ -117,7 +120,7 @@ function Feature({ feature, isActive, className, ...props }) {
       <h3
         className={clsx(
           'mt-6 text-sm font-medium',
-          isActive ? 'text-blue-600' : 'text-blue-900',
+          isActive ? 'text-blue-600' : 'text-gray-400',
         )}
       >
         {feature.name}
@@ -137,12 +140,12 @@ function FeaturesMobile() {
           <div className="relative mt-10 pb-10">
             <div className="absolute -inset-x-4 bottom-0 top-8 bg-slate-200 sm:-inset-x-6" />
             <div className="relative mx-auto w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
-              <Image
+              {/* <Image
                 className="w-full"
                 src={feature.image}
                 alt=""
                 sizes="52.75rem"
-              />
+              /> */}
             </div>
           </div>
         </div>
@@ -174,7 +177,7 @@ function FeaturesDesktop() {
               />
             ))}
           </Tab.List>
-          <Tab.Panels className="relative mt-20 overflow-hidden rounded-4xl bg-gray-800 px-14 py-16 xl:px-16">
+          <Tab.Panels className="relative mt-20 overflow-hidden rounded-4xl bg-slate-900 px-14 py-16 xl:px-16">
             <div className="-mx-5 flex">
               {features.map((feature, featureIndex) => (
                 <Tab.Panel
@@ -188,12 +191,14 @@ function FeaturesDesktop() {
                   aria-hidden={featureIndex !== selectedIndex}
                 >
                   <div className="w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
-                    <Image
+                    {/* <Image
                       className="w-full"
                       src={feature.image}
                       alt=""
                       sizes="52.75rem"
-                    />
+                    /> */}
+                    <Spline  className="w-full" scene={feature.image} />
+
                   </div>
                 </Tab.Panel>
               ))}
@@ -218,10 +223,9 @@ export function Solution() {
           <h2 className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl">
           Una Solution Completa
           </h2>
-          {/* <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-blue-900">
-            Because you’d probably be a little confused if we suggested you
-            complicate your everyday business tasks instead.
-          </p> */}
+          <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-blue-900">
+          Spatial te ofrece todas las herramientas necesarias para optimizar cada paso del proceso.
+          </p>
         </div>
       </Container>
       <div className="relative mt-14 sm:mt-24">
