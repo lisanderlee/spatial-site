@@ -7,50 +7,66 @@ import {
   ServerIcon,
 } from '@heroicons/react/20/solid'
 
+
+
+
+
+
 const features = [
   {
-    name: 'Push to deploy.',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.',
+    name: 'Logística e Inventario',
+    description: 'Gestión del stock de almacenes por radiofrecuencia (RFID), control del canal de distribución, entrega del producto al cliente y puntos de venta, etc.',
     icon: CloudArrowUpIcon,
   },
   {
-    name: 'SSL certificates.',
-    description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
+    name: 'Producción',
+    description: 'Programación de la producción, planificación de las necesidades de material, lanzamiento y control de órdenes de fabricación, seguimiento de indicadores, etc.',
     icon: LockClosedIcon,
+ 
+
   },
   {
-    name: 'Simple queues.',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.',
+    name: 'E-Commerce + Integraciones',
+    description: 'Conecta tu tienda online a diversas plataformas para potenciar su funcionalidad, automatizando la gestión de pedidos, inventario y comunicación con clientes.',
     icon: ArrowPathIcon,
   },
   {
-    name: 'Advanced security.',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.',
+    name: 'Administrativo / Contable',
+    description: 'Llevá un registro de las transacciones financieras de tu empresa y realizá tareas administrativas diarias. Automatizá tus procesos de negocio y a obtené una visión más completa de tus operaciones.',
     icon: FingerPrintIcon,
   },
+  
+
   {
-    name: 'Powerful API.',
-    description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
+    name: 'Punto de venta (POS)',
+    description: 'Usa nuestro software para gestionar ventas, pagos e inventario en tus tiendas. Mejora la eficiencia del inventario y acelera las transacciones con tecnología RFID, impactando positivamente en las ventas y satisfacción del cliente.',
     icon: Cog6ToothIcon,
   },
+
+
   {
-    name: 'Database backups.',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. ',
+    name: 'Reportes de Power BI',
+    description: 'La interfaz de Power BI te permitirá visualizar y comprender los datos de manera más eficaz. Nuestros reportes atienden diferentes necesidades y requerimientos.',
     icon: ServerIcon,
   },
+
+
   {
-    name: 'Advanced security.',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.',
+    name: '  Automatización Administrativa.',
+    description: 'Simplifica las tareas diarias, automatiza los procesos empresariales y obtén una visión integral de tus operaciones.',
     icon: FingerPrintIcon,
   },
+
+
   {
-    name: 'Powerful API.',
-    description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
+    name: ' Visualización de Datos.',
+    description: 'Aprovecha las capacidades de Power BI para visualizar, interpretar y actuar sobre tus datos de manera más efectiva.',
     icon: Cog6ToothIcon,
   },
+
   {
-    name: 'Database backups.',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. ',
+    name: 'Mobile App',
+    description: 'Llevar un óptimo control de inventario es esencial para la rentabilidad de tu negocio y nuestra app te facilita la tarea: tomá el inventario de tus prendas etiquetadas con tags RFID en minutos. Reducí tiempos y costos en tus tiendas y depósitos.',
     icon: ServerIcon,
   },
 ]
@@ -60,11 +76,10 @@ export default function Example() {
     <div className=" py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl sm:text-center">
-          <h2 className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl">Everything you need</h2>
-          <p className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl">No server? No problem.</p>
+          <h2 className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl">Todo lo que necesitas</h2>
+          <p className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl">en una solo plataforma.</p>
           <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-blue-900">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste
-            dolor cupiditate blanditiis.
+          Además de digitalizar tu stock te ofrecemos una solución integral a todas tus necesidades en un solo producto.
           </p>
         </div>
       </div>

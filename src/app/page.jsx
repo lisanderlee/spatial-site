@@ -20,9 +20,8 @@ export default function Home() {
         <Solution />
         <Features />
         <Integrations />
-        <CallToAction />
         <Testimonials />
-        
+        {/* <CallToAction /> */}
         <Faqs />
       </main>
       <Footer />
