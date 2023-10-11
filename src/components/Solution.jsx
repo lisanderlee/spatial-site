@@ -16,7 +16,7 @@ const features = [
     summary: 'Desde producción hasta el consumidor, etiquetas que rastrean cada prenda.',
     description:
       'Te proporcionamos etiquetas inteligentes, diseñadas a medida, para rastrear cada prenda desde su creación hasta su destino final.',
-    image: "https://prod.spline.design/0w2BcPBxkeKjEbEJ/scene.splinecode",
+    image: "https://prod.spline.design/wUx6g6jnFDEay078/scene.splinecode",
     icon: function ReportingIcon() {
       let id = useId()
       return (
@@ -35,7 +35,7 @@ const features = [
       'Captura instantánea de contenidos, eliminando conteos manuales.',
     description:
       'Con Smart Tunnels estratégicamente ubicados, los datos son siempre precisos y verificables, asegurando un rastreo exacto en cada punto.',
-    image: "https://prod.spline.design/yJeHbqaQtGSGml0o/scene.splinecode",
+    image: "https://prod.spline.design/DXLZIE-1ZersKd1h/scene.splinecode",
     icon: function InventoryIcon() {
       return (
         <>
@@ -110,6 +110,7 @@ function FeaturesMobile() {
                 alt=""
                 sizes="52.75rem"
               /> */}
+              <Spline  className="w-full" scene={feature.image} />
             </div>
           </div>
         </div>

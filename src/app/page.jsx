@@ -9,7 +9,7 @@ import { Solution } from '@/components/Solution'
 import Testimonials from '@/components/Testimonials'
 import Features from '@/components/Features'
 import About from '@/components/About'
-
+import Contact from '@/components/Contact'
 export default function Home() {
   return (
     <>
@@ -22,6 +22,7 @@ export default function Home() {
         <Integrations />
         <Testimonials />
         {/* <CallToAction /> */}
+        <Contact/>
         <Faqs />
       </main>
       <Footer />
