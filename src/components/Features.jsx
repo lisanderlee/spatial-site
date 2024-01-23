@@ -1,10 +1,17 @@
 import {
-  ArrowPathIcon,
+  
   CloudArrowUpIcon,
   Cog6ToothIcon,
   FingerPrintIcon,
   LockClosedIcon,
   ServerIcon,
+  TruckIcon,
+  CogIcon, 
+  ShoppingBagIcon,
+  CalculatorIcon,
+  MapPinIcon,
+  ChartBarIcon,
+  ArrowPathIcon
 } from '@heroicons/react/20/solid'
 
 
@@ -16,59 +23,46 @@ const features = [
   {
     name: 'Logística e Inventario',
     description: 'Gestión del stock de almacenes por radiofrecuencia (RFID), control del canal de distribución, entrega del producto al cliente y puntos de venta, etc.',
-    icon: CloudArrowUpIcon,
+    icon: TruckIcon,
   },
   {
     name: 'Producción',
     description: 'Programación de la producción, planificación de las necesidades de material, lanzamiento y control de órdenes de fabricación, seguimiento de indicadores, etc.',
-    icon: LockClosedIcon,
+    icon: CogIcon,
  
 
   },
   {
     name: 'E-Commerce + Integraciones',
     description: 'Conecta tu tienda online a diversas plataformas para potenciar su funcionalidad, automatizando la gestión de pedidos, inventario y comunicación con clientes.',
-    icon: ArrowPathIcon,
+    icon: ShoppingBagIcon,
   },
   {
     name: 'Administrativo / Contable',
     description: 'Llevá un registro de las transacciones financieras de tu empresa y realizá tareas administrativas diarias. Automatizá tus procesos de negocio y a obtené una visión más completa de tus operaciones.',
-    icon: FingerPrintIcon,
+    icon: CalculatorIcon,
   },
   
 
   {
     name: 'Punto de venta (POS)',
     description: 'Usa nuestro software para gestionar ventas, pagos e inventario en tus tiendas. Mejora la eficiencia del inventario y acelera las transacciones con tecnología RFID, impactando positivamente en las ventas y satisfacción del cliente.',
-    icon: Cog6ToothIcon,
+    icon: MapPinIcon,
   },
 
 
   {
     name: 'Reportes de Power BI',
     description: 'La interfaz de Power BI te permitirá visualizar y comprender los datos de manera más eficaz. Nuestros reportes atienden diferentes necesidades y requerimientos.',
-    icon: ServerIcon,
+    icon: ChartBarIcon,
   },
 
 
-  {
-    name: '  Automatización Administrativa.',
-    description: 'Simplifica las tareas diarias, automatiza los procesos empresariales y obtén una visión integral de tus operaciones.',
-    icon: FingerPrintIcon,
-  },
 
 
-  {
-    name: ' Visualización de Datos.',
-    description: 'Aprovecha las capacidades de Power BI para visualizar, interpretar y actuar sobre tus datos de manera más efectiva.',
-    icon: Cog6ToothIcon,
-  },
+ 
 
-  {
-    name: 'Mobile App',
-    description: 'Llevar un óptimo control de inventario es esencial para la rentabilidad de tu negocio y nuestra app te facilita la tarea: tomá el inventario de tus prendas etiquetadas con tags RFID en minutos. Reducí tiempos y costos en tus tiendas y depósitos.',
-    icon: ServerIcon,
-  },
+
 ]
 
 
