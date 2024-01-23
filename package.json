@@ -16,11 +16,13 @@
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^0.9.464",
     "@tailwindcss/forms": "^0.5.3",
+    "@u-wave/react-vimeo": "^0.9.10",
     "autoprefixer": "^10.4.12",
     "clsx": "^1.2.1",
     "next": "13.4.16",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-player": "^2.14.1",
     "tailwindcss": "^3.3.3"
   },
   "devDependencies": {
