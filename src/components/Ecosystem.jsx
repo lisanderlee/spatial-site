@@ -16,6 +16,8 @@ import Image from "next/image"
 import Tag from "@/images/tag.svg"
 import Box from "@/images/Box.svg"
 import Gun from "@/images/Gun.svg"
+import Mirror from "@/images/Mirror.svg"
+import POS from "@/images/POS.svg"
 const features = [
   {
     name: 'Etiqueta Inteligente',
@@ -43,14 +45,14 @@ const features = [
     description:
       'El Smart Mirror transforma la experiencia de compra en el punto de venta, agilizando la atención y proporcionando información detallada de las prendas probadas por el cliente, mejorando así la interacción y satisfacción en la tienda.', imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-feature-07-detail-02.jpg',
     imageAlt: 'Detail of zipper pull with tan leather and silver rivet.',
-    imageSrc: Gun,
+    imageSrc: Mirror,
   },
   {
     name: 'POS Retail',
     description:
       'El sistema POS Retail de Spatial, integrado con tecnología RFID, transforma la experiencia de venta al por menor. Permite un seguimiento detallado de las prendas en la tienda, facilitando una gestión de inventario en tiempo real y una experiencia de compra más rápida y eficiente para el cliente. Además, ayuda en la prevención de pérdidas y mejora la precisión en las transacciones.',
     imageAlt: 'Detail of zipper pull with tan leather and silver rivet.',
-    imageSrc: Gun,
+    imageSrc: POS,
   }
 ]
 
@@ -61,7 +63,7 @@ function classNames(...classes) {
 
 export default function Ecosystem() {
   return (
-    <div className="bg-white">
+    <div id="solucion" className="bg-white">
       <div className="mx-auto max-w-2xl px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-3xl   font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -77,23 +79,25 @@ export default function Ecosystem() {
 
         <div className="mt-16 space-y-16">
           {features.map((feature, featureIdx) => (
-            <div
-              key={feature.name}
-              className="flex lg:flex-row-reverse sm:flex-col lg:items-center lg:gap-x-24 ">
-              <div className="flex flex-1">
+            <div key={feature.name} className="flex lg:flex-row flex-col lg:items-center lg:gap-x-24 ">
+              
+              <div className="flex rounded-2xl bg-gray-900 p-8  w-96   h-96 ">
+                <div className=" xy-auto mx-auto">
+                  <Image className="" 
+                  width={300}
+                  height={300} 
+                  src={feature.imageSrc} />
+                </div>
+              </div>
+
+              <div className="flex flex-1 mt-10  w-96  lg:mt-0">
                 <div className="flex flex-col">
                   <h3 className="text-3xl font-bold text-gray-900">{feature.name}</h3>
                   <p className="mt-2 text-md text-gray-500">{feature.description}</p>
                 </div>
               </div>
-              <div className="flex rounded-2xl bg-indigo-600 p-8  flex-1  h-96 ">
-
-                <div className="w-full h-full  justify-center items-center mx-auto">
-                  <Image className="" width={300}
-                    height={300} src={feature.imageSrc} />
-                </div>
-
-              </div>
+   
+          
             </div>
 
 
