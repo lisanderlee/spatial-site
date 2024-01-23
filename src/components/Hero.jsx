@@ -6,9 +6,9 @@ import { ChevronRightIcon } from '@heroicons/react/20/solid'
 import ReactPlayer from 'react-player'
 import Testimonial from './Testimonials'
 const navigation = [
-  { name: 'Solucion', href: '#' },
-  { name: 'Beneficios', href: '#' },
-  { name: 'FAQ', href: '#' },
+  { name: 'Solucion', href: '#solucion' },
+  { name: 'Beneficios', href: '#beneficios' },
+  { name: 'FAQ', href: '#FAQ' },
 
 ]
 
@@ -47,7 +47,7 @@ export default function Hero() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+            <a href="#contactenos" className="text-sm font-semibold leading-6 text-white">
               Contactenos <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
@@ -88,7 +88,7 @@ export default function Hero() {
                 </div>
                 <div className="py-6">
                   <a
-                    href="#"
+                    href="#contactenos"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-50"
                   >
                     Contactenos
@@ -117,12 +117,7 @@ export default function Hero() {
               <path d="M100 200V.5M.5 .5H200" fill="none" />
             </pattern>
           </defs>
-          <svg x="50%" y={-1} className="overflow-visible fill-gray-50">
-            <path
-              d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
-              strokeWidth={0}
-            />
-          </svg>
+   
           <rect width="100%" height="100%" strokeWidth={0} fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
         </svg>
         <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex flex-col lg:items-center ">

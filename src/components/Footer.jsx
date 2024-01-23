@@ -6,15 +6,15 @@ import { NavLink } from '@/components/NavLink'
 
 export function Footer() {
   return (
-    <footer className="bg-slate-50">
+    <footer className="bg-gray-900">
       <Container>
         <div className="py-16">
           <Logo className="mx-auto h-10 w-auto" />
           <nav className="mt-10 text-sm" aria-label="quick links">
             <div className="-my-1 flex justify-center gap-x-6">
-              <NavLink href="#solution">Solucion</NavLink>
-              <NavLink href="#features">Beneficios</NavLink>
-              <NavLink href="#faq">FAQ</NavLink>
+              <NavLink href="#solution"><p className='text-white'>Solucion</p></NavLink>
+              <NavLink href="#features"><p className='text-white'>Beneficios</p></NavLink>
+              <NavLink href="#faq"><p className='text-white'>FAQ</p></NavLink>
             </div>
           </nav>
         </div>
